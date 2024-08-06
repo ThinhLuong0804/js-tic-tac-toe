@@ -64,7 +64,7 @@ export function checkGameStatus(cellValues) {
   const winSetIndex = checkSetList.findIndex((set) => {
     const first = cellValues[set[0]];
     const second = cellValues[set[1]];
-    const third = cellValues[set[3]];
+    const third = cellValues[set[2]];
     return first !== "" && first === second && second === third;
   });
 
